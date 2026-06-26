@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YANWU</title>
+    <link rel="stylesheet" href="/src/styles/pages.css">
+    <link rel="icon" href="/src/images/logo_end.png">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_inner">
+            <nav>
+                <a href="index.html">О нас</a>
+                <div class="dropdown"><a href="#">Форматы</a>
+                    <div class="dropdown-content">
+                        <a  href="myths.html">Мифы</a>
+                        <a  href="legends.html">Легенды</a>
+                        <a  href="superstitions.html">Суеверия</a>
+                        <a  href="specials.html">Спецпроекты</a>
+                    </div>
+                </div>
+                <a href="tests.html">Тесты</a>
+                <a href="timeline.html">Таймлайн</a>
+            </nav>
+            <div class="logo_wrap">
+            <div class="wrapper">
+            <input type="checkbox" name="theme_switch" id="switch">
+            <label for="switch"></label>
+            </div>
+            <a href="#hero"><img src="images/A_mini.png"></a>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="banner">
+        <div class="banner_content">
+            <h1>ЛЕГЕНДЫ</h1>
+            <h6>Сюжеты основаны на исторических событиях или реальных личностях с использованием преувеличения и вымышленных элементах.</h6>    
+        </div>
+        <img class="hero" src="images/mask_banner.png">
+    </div>
+
+    <div class="main">
+        <div id="myBtnContainer">
+            <button class="tag" onclick="filterSelection('all')">ВСЕ</button>
+            <button class="tag" onclick="filterSelection('evilspirits')">ЗЛЫЕ ДУХИ</button>
+            <button class="tag" onclick="filterSelection('gods')">БОГИ</button>
+            <button class="tag" onclick="filterSelection('ancestors')">ДУХИ ПРЕДКОВ</button>
+            <button class="tag" onclick="filterSelection('world')">СОЗДАНИЕ МИРА</button>
+            <button class="tag" onclick="filterSelection('heroism')">ПОДВИГИ</button>
+        </div>
+<!--
+        <div class="container">
+                <div class="filterDiv evilspirits">
+                    ЗЛЫЕ ДУХИ
+                </div>
+                <div class="filterDiv gods">
+                    БОГИ
+                </div>
+                <div class="filterDiv ancestors">
+                    ДУХИ ПРЕДКОВ
+                </div>
+                <div class="filterDiv world">
+                    СОЗДАНИЕ МИРА
+                </div>
+                <div class="filterDiv heroism">
+                    ПОДВИГИ
+                </div>    
+        </div>
+    </div>
+-->
+
+    <div class="main">
+        <div class="filter-buttons">
+            <button data-category="all" class="active">ALL</button>
+            <button data-category="evil-spirits">Злые духи</button>
+            <button data-category="gods">Боги</button>
+            <button data-category="ancestors">Духи предков</button>
+        </div>
+
+        <div class="articles">
+            <div class="articles_container">
+                <div class="article_p" data-category="evil-spirits">
+                    <img src="images/Type=photo 7.png">
+                    <details>
+                        <summary>
+                            <h3>МАСКА ХАННЯ</h3>
+                        </summary>
+                        <p>Миф гласит, что маска Хання изображает лицо женщины, которая от неразделённой любви и сжигающей ревности превратилась в мстительного…</p>
+                    </details> 
+                </div>
+
+                <article class="article_p" data-category="gods">
+                    <img src="images/Frame 2136140598.png">
+                    <details>
+                        <summary>
+                            <h3>маленький</h3>
+                        </summary>
+                        <p>Миф гласит, что огромная человеческая голова, парящая над…</p>
+                    </details> 
+                </article>
+
+                <article class="article_p" data-category="gods">
+                    <img src="images/Frame 2131330883.png">
+                    <details>
+                        <summary>
+                            <h3>средний</h3>
+                        </summary>
+                        <p>Миф гласит, что огромная человеческая голова, парящая над…</p>
+                    </details> 
+                </article>
+                
+                <article class="article_p" data-category="gods">
+                    <img src="images/Frame 2131330883.png">
+                    <details>
+                        <summary>
+                            <h3>средний</h3>
+                        </summary>
+                        <p>Миф гласит, что огромная человеческая голова, парящая над…</p>
+                    </details> 
+                </article>
+
+                <article class="article_p" data-category="gods">
+                    <img src="images/Frame 2136140598.png">
+                    <details>
+                        <summary>
+                            <h3>маленький</h3>
+                        </summary>
+                        <p>Миф гласит, что огромная человеческая голова, парящая над…</p>
+                    </details> 
+                </article>
+
+                 <div class="article_p" data-category="evil-spirits">
+                    <img src="images/Type=photo 7.png">
+                    <details>
+                        <summary>
+                            <h3>большой</h3>
+                        </summary>
+                        <p>Миф гласит, что маска Хання изображает лицо женщины, которая от неразделённой любви и сжигающей ревности превратилась в мстительного…</p>
+                    </details> 
+                </div>
+
+                 <div class="article_p" data-category="evil-spirits">
+                    <img src="images/Type=photo 7.png">
+                    <details>
+                        <summary>
+                            <h3>большой</h3>
+                        </summary>
+                        <p>Миф гласит, что маска Хання изображает лицо женщины, которая от неразделённой любви и сжигающей ревности превратилась в мстительного…</p>
+                    </details> 
+                </div>
+
+                <article class="article_p" data-category="gods">
+                    <img src="images/Frame 2136140598.png">
+                    <details>
+                        <summary>
+                            <h3>маленький</h3>
+                        </summary>
+                        <p>Миф гласит, что огромная человеческая голова, парящая над…</p>
+                    </details> 
+                </article>
+
+            </div>
+        </div>
+    </div>
+
+    
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
