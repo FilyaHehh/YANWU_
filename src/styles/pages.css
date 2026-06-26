@@ -73,21 +73,22 @@ html[data-theme=dark] {
   font-variation-settings: "wdth" 100;
 }
 * p {
-  font-family: "Roboto";
+  font-family: "Suisselntl";
 }
 * a {
-  font-family: "Roboto";
+  font-family: "Suisselntl";
 }
 * h1 {
   font-family: "Viaoda Libre";
   font-size: 96px;
   font-weight: 100;
-  line-height: 110%;
+  line-height: 100%;
   letter-spacing: 0%;
   margin: 0px;
 }
 * h2 {
   font-family: "Viaoda Libre";
+  line-height: 110%;
 }
 * h3 {
   font-family: "Viaoda Libre";
@@ -102,15 +103,15 @@ html[data-theme=dark] {
   text-transform: uppercase;
 }
 * h5 {
-  font-family: "Roboto";
+  font-family: "Suisselntl";
   font-size: 48px;
   font-weight: 100;
 }
 * h6 {
-  font-family: "Roboto";
+  font-family: "Suisselntl";
   font-size: 24px;
   font-weight: 100;
-  line-height: 110%;
+  line-height: 130%;
   margin: 0;
 }
 
@@ -595,10 +596,12 @@ footer .age:hover {
 }
 
 .other_articles {
-  margin: 61px;
   display: flex;
   flex-direction: column;
   gap: 57px;
+}
+.other_articles h1 {
+  text-align: center;
 }
 
 .description_container .description {
@@ -609,4 +612,38 @@ footer .age:hover {
 .description_container .description h1 {
   color: #DA3C3F;
   text-align: center;
+}
+
+.articles_scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.articles_scroll .article-s {
+  background-color: #F1F1F1;
+  border-radius: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+  color: #120F0F;
+  text-align: center;
+  padding: 34px 52px;
+}
+.articles_scroll .article-s h4 {
+  padding: 0;
+  margin: 0;
+}
+.articles_scroll button {
+  border: none;
+  background-color: #DA3C3F;
+  color: #F1F1F1;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 50%;
+}
+.articles_scroll button:hover {
+  color: #120F0F;
 }/*# sourceMappingURL=pages.css.map */
