@@ -27,21 +27,20 @@
     margin: 64px;
 
     .tags_container{
-    display: flex;
-    gap: 8px;
-    margin: 64px;
+        display: flex;
+        gap: 8px;
+        margin: 64px;
     }
 
     .tag{
-    padding: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 1px solid $red;
-    border-radius: 10px;
-    background-color: var(--color-background);
-    color: var(--color-text);
-    
-}
+        padding: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 1px solid $red;
+        border-radius: 10px;
+        background-color: var(--color-background);
+        color: var(--color-text);
+    }
 }
 
 .articles{
@@ -375,4 +374,6 @@
       margin: 128px;
     }
 }
+
+
 
