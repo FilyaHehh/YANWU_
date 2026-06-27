@@ -330,4 +330,9 @@ footer .age:hover {
 }
 .articles_scroll button:hover {
   color: #120F0F;
+}
+
+summary {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=rules.css.map */

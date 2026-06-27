@@ -332,6 +332,11 @@ footer .age:hover {
   color: #120F0F;
 }
 
+summary {
+  display: flex;
+  flex-direction: row;
+}
+
 .hero {
   background-image: url("/src/images/hero_1.png");
   height: 1000px;

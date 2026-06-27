@@ -332,6 +332,11 @@ footer .age:hover {
   color: #120F0F;
 }
 
+summary {
+  display: flex;
+  flex-direction: row;
+}
+
 body {
   padding: 0;
   margin: 0 auto;
