@@ -346,3 +346,39 @@ footer {
         color: $red;
     }
 }
+
+.articles_scroll{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+    .article-s {
+        background-color: $white;
+        border-radius: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 22px;
+        color: $black;
+        text-align: center;
+        padding: 34px 52px;
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    button {
+        border: none;
+        background-color: $red;
+        color: $white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        width: 50%;
+        &:hover {
+            color: $black;
+        }
+    }
+}

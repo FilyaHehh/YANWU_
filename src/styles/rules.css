@@ -296,4 +296,38 @@ footer .age:hover {
 }
 .timeline_scroll .age:hover {
   color: #DA3C3F;
+}
+
+.articles_scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.articles_scroll .article-s {
+  background-color: #F1F1F1;
+  border-radius: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+  color: #120F0F;
+  text-align: center;
+  padding: 34px 52px;
+}
+.articles_scroll .article-s h4 {
+  padding: 0;
+  margin: 0;
+}
+.articles_scroll button {
+  border: none;
+  background-color: #DA3C3F;
+  color: #F1F1F1;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 50%;
+}
+.articles_scroll button:hover {
+  color: #120F0F;
 }/*# sourceMappingURL=rules.css.map */

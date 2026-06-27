@@ -46,7 +46,6 @@
 
 .articles{
     margin-top: 64px;
-    margin-left: 64px;
     display: flex;
     justify-content: center;
 
@@ -60,10 +59,9 @@
 
     .articles_container{
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 1fr ) ;
+    grid-template-columns: repeat(8, 152px);
     gap: 31px;
+    row-gap: 128px;
     width: 100%;
     justify-content: center;
     align-items: baseline;
@@ -153,11 +151,6 @@
     color: var(--yanwu-white);
 }
 
-.logo_end {
-    display: flex;
-    justify-content: center;
-    margin: 160px;
-}
 
 .tests_card{
     margin: 117px;
@@ -235,26 +228,40 @@
   color: white;
 }
 
-.grid {
-    display: grid;
-    gap: 32px;
-    row-gap: 160px;
-grid-template-columns: repeat(8, 136px);
-    grid-template-rows: repeat(4, 517px);
-    justify-content: center;
-    margin: 64px;
-    align-items: start;
+
+.item-1 {
+    grid-column-start: 1;
+  grid-column-end: 5;
+
 }
 
-.grid p {
-    font-size: 16px;
+.item-2 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+
 }
 
-.grid > * {
-    background-color: var(--yanwu-black);
-    border-radius: 10px;
-    margin: 80px 0;
+.item-3 {
+    grid-column-start: 4;
+    grid-column-end: 6;
 }
+
+.item-4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item-5 {
+    grid-column-start: 4;
+    grid-column-end: 8;
+}
+
+.item-6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
 
 .article_three {
     grid-column: span 3;
@@ -332,39 +339,40 @@ grid-template-columns: repeat(8, 136px);
 }
 
 
-.articles_scroll{
+.baku {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
-
-    .article-s {
-        background-color: $white;
-        border-radius: 20px;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 22px;
-        color: $black;
-        text-align: center;
-        padding: 34px 52px;
-        h4 {
-            padding: 0;
-            margin: 0;
-        }
+    flex-direction: column;
+    .hero {
+        width: 100%;
+        margin-bottom: 64px;
     }
 
-    button {
-        border: none;
-        background-color: $red;
-        color: $white;
-        padding: 15px 20px;
-        border-radius: 10px;
-        width: 50%;
-        &:hover {
-            color: $black;
+    .text-left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+
+        .img-container {
+            display: flex;
+            width: 100%;
+            margin: 48px;
         }
+
+        .text-container {
+            width: 80%;
+            margin: 64px;
+        }
+    }
+}
+
+.logo-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo-end {
+      margin: 128px;
     }
 }
 

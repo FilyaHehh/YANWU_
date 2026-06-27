@@ -8,7 +8,7 @@ const production = process.env.NODE_ENV === 'production';
 
 
 module.exports = {
-    entry: { myAppName: path.resolve(__dirname, "./src/index.js") },
+    entry: { Yanwu: path.resolve(__dirname, "./src/index.js") },
     output: {
         path: path.resolve(__dirname, "./dist"),
         filename: production ? '[name].[contenthash].js' : '[name].js',
@@ -52,7 +52,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: "YANWU",
             template: "./src/index.html",
-            favicon: "./public/favicon.ico"
+            favicon: "./src/images/logo_end.png"
         }),
         new MiniCssExtractPlugin({
             filename: production ? '[name].[contenthash].css' : '[name].css',

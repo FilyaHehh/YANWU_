@@ -1,0 +1,182 @@
+@import "rules.scss";
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.banner {
+    height: 1150px;
+    background-image: url(/src/images/tengu/1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--yanwu-red);
+}
+
+.banner_title {
+    padding: 64px;
+    
+}
+
+.part_1 {
+    height: 772px;
+    background-image: url(/src/images/tengu/2.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right;
+
+    display: flex;
+    align-items: center;
+
+    .part1_content {
+        width: 50%;
+        margin: 64px;
+    }
+}
+
+.part_2 {
+    height: 1200px;
+    background-image: url(/src/images/tengu/3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left;
+    display: flex;
+    align-items: center;
+
+    
+}
+.part2_container {
+    padding: 64px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+
+    }
+    .part2_content {
+    display: grid;
+    grid-template-columns: repeat(2, 308px);
+    grid-template-rows: repeat(2, 200px);
+    
+    }
+
+.text_right {
+    grid-column-start: 2;
+    grid-row-start:2 ;
+
+}
+
+.part_3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 64px;
+
+
+    .part3_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+}
+
+.part_4 {
+    height:1500px ;
+    background-image: url(/src/images/tengu/4.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: radial-gradient( #DA3C3F, 80%);
+    display: flex;
+    align-items: center;
+
+    .part4_container {
+        width: 30%;
+        margin: 64px;
+    }
+}
+
+.part_5 {
+    
+    background-image: url(/src/images/tengu/5.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    display: flex;
+    flex-direction: column;
+    background-position: right;
+
+    h1 {
+        margin-bottom: 160px;
+    }
+
+    .part5_content {
+    width: 60%;
+    margin: 64px;
+}
+}
+
+
+
+.part_6 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .part6_container {
+        margin: 148px;
+    }
+
+        .part6_content {
+        background-image: url(/src/images/tengu/6.png);
+        height: 800px;
+        width: 100%;
+        text-align: left;
+
+        h6 {
+            width: 30%;
+            margin: 64px;
+        }
+
+    }
+}
+
+
+
+.the_end {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .the_end, h4 {
+        color: $red;
+        margin: 0;
+        margin-top: 128px;
+    }
+}
+
+
+
+.other_articles {
+    width: 379px;
+    display: grid;
+    grid-template-columns: repeat(4, 94px);
+    grid-template-rows: repeat(2, 70px)
+}
+
+.title_right {
+    grid-column-start: 2;
+    grid-row-start:2 ;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+}
